@@ -4,4 +4,4 @@ DARWIN=osx
 PREFIX=/Users/Shared/xbmc-depends/macosx10.7_i386
 STAGING=/Users/Shared/xbmc-depends
 
-include /Users/bryansmith/xbmc/tools/darwin/depends/Makefile.buildtools
+include /Users/bryansmith/xbmc-pvr-mac/tools/darwin/depends/Makefile.buildtools

@@ -1,6 +1,6 @@
 /*  Simple RTMP Server
  *  Copyright (C) 2009 Andrej Stepanchuk
- *  Copyright (C) 2009 Howard Chu
+ *  Copyright (C) 2009-2011 Howard Chu
  *
  *  This Program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -95,6 +95,10 @@ STREAMING_SERVER *rtmpServer = 0;	// server structure pointer
 
 STREAMING_SERVER *startStreaming(const char *address, int port);
 void stopStreaming(STREAMING_SERVER * server);
+void AVreplace(AVal *src, const AVal *orig, const AVal *repl);
+
+static const AVal av_dquote = AVC("\"");
+static const AVal av_escdquote = AVC("\\\"");
 
 typedef struct
 {
@@ -219,9 +223,6 @@ SendConnectResult(RTMP *r, double txn)
   *enc++ = 0;
   *enc++ = 0;
   *enc++ = AMF_OBJECT_END;
-  *enc++ = 0;
-  *enc++ = 0;
-  *enc++ = AMF_OBJECT_END;
 
   packet.m_nBodySize = enc - packet.m_body;
 
@@ -261,6 +262,7 @@ static const AVal av_NetStream_Play_Stop = AVC("NetStream.Play.Stop");
 static const AVal av_Stopped_playing = AVC("Stopped playing");
 SAVC(details);
 SAVC(clientid);
+static const AVal av_NetStream_Authenticate_UsherToken = AVC("NetStream.Authenticate.UsherToken");
 
 static int
 SendPlayStart(RTMP *r)
@@ -575,6 +577,15 @@ ServeInvoke(STREAMING_SERVER *server, RTMP * r, RTMPPacket *packet, unsigned int
     {
       SendResultNumber(r, txn, 10.0);
     }
+  else if (AVMATCH(&method, &av_NetStream_Authenticate_UsherToken))
+    {
+      AVal usherToken;
+      AMFProp_GetString(AMF_GetProp(&obj, NULL, 3), &usherToken);
+      AVreplace(&usherToken, &av_dquote, &av_escdquote);
+      server->arglen += 6 + usherToken.av_len;
+      server->argc += 2;
+      r->Link.usherToken = usherToken;
+    }
   else if (AVMATCH(&method, &av_play))
     {
       char *file, *p, *q, *cmd, *ptr;
@@ -639,6 +650,17 @@ ServeInvoke(STREAMING_SERVER *server, RTMP * r, RTMPPacket *packet, unsigned int
 	      argv[argc].av_val = ptr + 5;
 	      ptr += sprintf(ptr, " -p \"%s\"", r->Link.pageUrl.av_val);
 	      argv[argc++].av_len = r->Link.pageUrl.av_len;
+	    }
+	  if (r->Link.usherToken.av_val)
+	    {
+	      argv[argc].av_val = ptr + 1;
+	      argv[argc++].av_len = 2;
+	      argv[argc].av_val = ptr + 5;
+	      ptr += sprintf(ptr, " -j \"%s\"", r->Link.usherToken.av_val);
+	      argv[argc++].av_len = r->Link.usherToken.av_len;
+	      free(r->Link.usherToken.av_val);
+	      r->Link.usherToken.av_val = NULL;
+	      r->Link.usherToken.av_len = 0;
 	    }
 	  if (r->Link.extras.o_num) {
 	    ptr = dumpAMF(&r->Link.extras, ptr, argv, &argc);
@@ -740,7 +762,7 @@ ServePacket(STREAMING_SERVER *server, RTMP *r, RTMPPacket *packet)
 {
   int ret = 0;
 
-  RTMP_Log(RTMP_LOGDEBUG, "%s, received packet type %02X, size %lu bytes", __FUNCTION__,
+  RTMP_Log(RTMP_LOGDEBUG, "%s, received packet type %02X, size %u bytes", __FUNCTION__,
     packet->m_packetType, packet->m_nBodySize);
 
   switch (packet->m_packetType)
@@ -787,7 +809,7 @@ ServePacket(STREAMING_SERVER *server, RTMP *r, RTMPPacket *packet)
 
     case 0x11:			// flex message
       {
-	RTMP_Log(RTMP_LOGDEBUG, "%s, flex message, size %lu bytes, not fully supported",
+	RTMP_Log(RTMP_LOGDEBUG, "%s, flex message, size %u bytes, not fully supported",
 	    __FUNCTION__, packet->m_nBodySize);
 	//RTMP_LogHex(packet.m_body, packet.m_nBodySize);
 
@@ -815,7 +837,7 @@ ServePacket(STREAMING_SERVER *server, RTMP *r, RTMPPacket *packet)
 
     case 0x14:
       // invoke
-      RTMP_Log(RTMP_LOGDEBUG, "%s, received: invoke %lu bytes", __FUNCTION__,
+      RTMP_Log(RTMP_LOGDEBUG, "%s, received: invoke %u bytes", __FUNCTION__,
 	  packet->m_nBodySize);
       //RTMP_LogHex(packet.m_body, packet.m_nBodySize);
 
@@ -911,6 +933,11 @@ cleanup:
   rtmp.Link.pageUrl.av_val = NULL;
   rtmp.Link.app.av_val = NULL;
   rtmp.Link.flashVer.av_val = NULL;
+  if (rtmp.Link.usherToken.av_val)
+    {
+      free(rtmp.Link.usherToken.av_val);
+      rtmp.Link.usherToken.av_val = NULL;
+    }
   RTMP_LogPrintf("done!\n\n");
 
 quit:
@@ -1023,7 +1050,7 @@ stopStreaming(STREAMING_SERVER * server)
 
       if (closesocket(server->socket))
 	RTMP_Log(RTMP_LOGERROR, "%s: Failed to close listening socket, error %d",
-	    GetSockError());
+	    __FUNCTION__, GetSockError());
 
       server->state = STREAMING_STOPPED;
     }
@@ -1110,4 +1137,44 @@ main(int argc, char **argv)
     fclose(netstackdump_read);
 #endif
   return nStatus;
+}
+
+void
+AVreplace(AVal *src, const AVal *orig, const AVal *repl)
+{
+  char *srcbeg = src->av_val;
+  char *srcend = src->av_val + src->av_len;
+  char *dest, *sptr, *dptr;
+  int n = 0;
+
+  /* count occurrences of orig in src */
+  sptr = src->av_val;
+  while (sptr < srcend && (sptr = strstr(sptr, orig->av_val)))
+    {
+      n++;
+      sptr += orig->av_len;
+    }
+  if (!n)
+    return;
+
+  dest = malloc(src->av_len + 1 + (repl->av_len - orig->av_len) * n);
+
+  sptr = src->av_val;
+  dptr = dest;
+  while (sptr < srcend && (sptr = strstr(sptr, orig->av_val)))
+    {
+      n = sptr - srcbeg;
+      memcpy(dptr, srcbeg, n);
+      dptr += n;
+      memcpy(dptr, repl->av_val, repl->av_len);
+      dptr += repl->av_len;
+      sptr += orig->av_len;
+      srcbeg = sptr;
+    }
+  n = srcend - srcbeg;
+  memcpy(dptr, srcbeg, n);
+  dptr += n;
+  *dptr = '\0';
+  src->av_val = dest;
+  src->av_len = dptr - dest;
 }

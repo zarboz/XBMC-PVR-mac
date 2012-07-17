@@ -2,8 +2,8 @@ VERSION=v2.4
 
 prefix=/usr/local
 
-#CC=$(CROSS_COMPILE)gcc
-#LD=$(CROSS_COMPILE)ld
+CC=$(CROSS_COMPILE)gcc
+LD=$(CROSS_COMPILE)ld
 
 SYS=posix
 #SYS=mingw
@@ -12,7 +12,7 @@ CRYPTO=OPENSSL
 #CRYPTO=POLARSSL
 #CRYPTO=GNUTLS
 LIBZ=-lz
-LIB_GNUTLS=-lgnutls -lgcrypt $(LIBZ)
+LIB_GNUTLS=-lgnutls -lhogweed -lnettle -lgmp $(LIBZ)
 LIB_OPENSSL=-lssl -lcrypto $(LIBZ)
 LIB_POLARSSL=-lpolarssl $(LIBZ)
 CRYPTO_LIB=$(LIB_$(CRYPTO))

@@ -46,6 +46,7 @@
 #define RD_SUCCESS		0
 #define RD_FAILED		1
 #define RD_INCOMPLETE		2
+#define RD_NO_CONNECT		3
 
 #define DEF_TIMEOUT	30	/* seconds */
 #define DEF_BUFTIME	(10 * 60 * 60 * 1000)	/* 10 hours default */
@@ -444,7 +445,7 @@ Download(RTMP * rtmp,		// connected RTMP object
 {
   int32_t now, lastUpdate;
   int bufferSize = 64 * 1024;
-  char *buffer = (char *) malloc(bufferSize);
+  char *buffer;
   int nRead = 0;
   off_t size = ftello(file);
   unsigned long lastPercent = 0;
@@ -504,6 +505,8 @@ Download(RTMP * rtmp,		// connected RTMP object
   rtmp->m_read.initialFrame = initialFrame;
   rtmp->m_read.nMetaHeaderSize = nMetaHeaderSize;
   rtmp->m_read.nInitialFrameSize = nInitialFrameSize;
+
+  buffer = (char *) malloc(bufferSize);
 
   now = RTMP_GetTime();
   lastUpdate = now - 1000;
@@ -683,7 +686,7 @@ void usage(char *prog)
 	  RTMP_LogPrintf
 	    ("--resume|-e             Resume a partial RTMP download\n");
 	  RTMP_LogPrintf
-	    ("--timeout|-m num        Timeout connection num seconds (default: %lu)\n",
+	    ("--timeout|-m num        Timeout connection num seconds (default: %u)\n",
 	     DEF_TIMEOUT);
 	  RTMP_LogPrintf
 	    ("--start|-A num          Start at num seconds into stream (not valid when using --live)\n");
@@ -692,9 +695,11 @@ void usage(char *prog)
 	  RTMP_LogPrintf
 	    ("--token|-T key          Key for SecureToken response\n");
 	  RTMP_LogPrintf
+	    ("--jtv|-j JSON           Authentication token for Justin.tv legacy servers\n");
+	  RTMP_LogPrintf
 	    ("--hashes|-#             Display progress with hashes, not with the byte counter\n");
 	  RTMP_LogPrintf
-	    ("--buffer|-b             Buffer time in milliseconds (default: %lu)\n",
+	    ("--buffer|-b             Buffer time in milliseconds (default: %u)\n",
 	     DEF_BUFTIME);
 	  RTMP_LogPrintf
 	    ("--skip|-k num           Skip num keyframes when looking for last keyframe to resume from. Useful if resume fails (default: %d)\n\n",
@@ -738,6 +743,7 @@ main(int argc, char **argv)
   AVal hostname = { 0, 0 };
   AVal playpath = { 0, 0 };
   AVal subscribepath = { 0, 0 };
+  AVal usherToken = { 0, 0 }; //Justin.tv auth token
   int port = -1;
   int protocol = RTMP_PROTOCOL_UNDEFINED;
   int retries = 0;
@@ -839,12 +845,13 @@ main(int argc, char **argv)
     {"debug", 0, NULL, 'z'},
     {"quiet", 0, NULL, 'q'},
     {"verbose", 0, NULL, 'V'},
+    {"jtv", 1, NULL, 'j'},
     {0, 0, 0, 0}
   };
 
   while ((opt =
 	  getopt_long(argc, argv,
-		      "hVveqzr:s:t:p:a:b:f:o:u:C:n:c:l:y:Ym:k:d:A:B:T:w:x:W:X:S:#",
+		      "hVveqzr:s:t:p:a:b:f:o:u:C:n:c:l:y:Ym:k:d:A:B:T:w:x:W:X:S:#j:",
 		      longopts, NULL)) != -1)
     {
       switch (opt)
@@ -1051,6 +1058,9 @@ main(int argc, char **argv)
 	case 'S':
 	  STR2AVAL(sockshost, optarg);
 	  break;
+	case 'j':
+	  STR2AVAL(usherToken, optarg);
+	  break;
 	default:
 	  RTMP_LogPrintf("unknown option: %c\n", opt);
 	  usage(argv[0]);
@@ -1142,13 +1152,14 @@ main(int argc, char **argv)
 
   if (tcUrl.av_len == 0)
     {
-      char str[512] = { 0 };
-
-      tcUrl.av_len = snprintf(str, 511, "%s://%.*s:%d/%.*s",
+	  tcUrl.av_len = strlen(RTMPProtocolStringsLower[protocol]) +
+	  	hostname.av_len + app.av_len + sizeof("://:65535/");
+      tcUrl.av_val = (char *) malloc(tcUrl.av_len);
+	  if (!tcUrl.av_val)
+	    return RD_FAILED;
+      tcUrl.av_len = snprintf(tcUrl.av_val, tcUrl.av_len, "%s://%.*s:%d/%.*s",
 	  	   RTMPProtocolStringsLower[protocol], hostname.av_len,
 		   hostname.av_val, port, app.av_len, app.av_val);
-      tcUrl.av_val = (char *) malloc(tcUrl.av_len + 1);
-      strcpy(tcUrl.av_val, str);
     }
 
   int first = 1;
@@ -1167,7 +1178,7 @@ main(int argc, char **argv)
 
   RTMP_SetupStream(&rtmp, protocol, &hostname, port, &sockshost, &playpath,
 		   &tcUrl, &swfUrl, &pageUrl, &app, &auth, &swfHash, swfSize,
-		   &flashVer, &subscribepath, dSeek, dStopOffset, bLiveStream, timeout);
+		   &flashVer, &subscribepath, &usherToken, dSeek, dStopOffset, bLiveStream, timeout);
 
   /* Try to keep the stream moving if it pauses on us */
   if (!bLiveStream && !(protocol & RTMP_FEATURE_HTTP))
@@ -1244,7 +1255,7 @@ main(int argc, char **argv)
 
 	  if (!RTMP_Connect(&rtmp, NULL))
 	    {
-	      nStatus = RD_FAILED;
+	      nStatus = RD_NO_CONNECT;
 	      break;
 	    }
 
