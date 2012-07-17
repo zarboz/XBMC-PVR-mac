@@ -54,7 +54,7 @@ it will fail. Use Xcode 3.x under 10.7.
  $ cd tools/darwin/depends
  $ ./bootstrap
  $ ./configure --with-darwin=osx
- $ make
+ $ sudo make SYS=darwin
 
 -----------------------------------------------------------------------------
 4. How to compile
