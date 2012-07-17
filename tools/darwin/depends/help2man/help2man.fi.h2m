@@ -1,0 +1,73 @@
+Suomennos help2man-ohjelman man-sivusta
+
+--locale=fi_FI@euro
+
+[NIMI]
+help2man \- luo yksinkertainen man-sivu
+
+[SIS?LLYT? TIEDOSTOJA]
+Lis?materiaalia voi sis?llytt?? luotavaan tulosteeseen valitsimilla
+.B \-\-include
+ja
+.BR \-\-opt\-include .
+Muoto on yksinkertainen:
+
+    [kappale]
+    teksti
+
+    /hakuehto/
+    teksti
+
+Kappaleita puhdasta *roff-teksti? lis?t??n tulosteeseen joko kun alkaa
+.BI [ kappale ]
+(kirjainkoko merkitsev?) tai sellaisen kappaleen j?lkeen, joka t?sm??
+s??nn?lliseen lausekkeeseen
+
+.BI / hakuehto /\fR.
+
+Hakuehdoissa k?ytet??n Perlin s??nn?llisten lausekkeiden syntaksia, ja
+niiden per?ss? voi olla
+.IR i ,
+.I s
+tai
+.I m
+muuntimet (katso
+.BR perlre (1)).
+
+Rivit ennen ensimm?ist? kappaletta tai hakuehtoa, jotka alkavat "\-",
+k?sitell??n valitsimina. Kaikki muu ohitetaan, joten ne voivat olla
+k?ytt?j?n kommentteja, RCS-avainsanoja ja muuta sellaista.
+
+Kappaleiden tulostusj?rjestys on:
+
+    NIMI
+    YLEISKATSAUS
+    KUVAUS
+    VALITSIMET
+    YMP?RIST?
+    TIEDOSTOT
+    ESIMERKKEJ?
+    \fImuut\fR
+    TEKIJ?
+    VIRHEIST? ILMOITTAMINEN
+    TEKIJ?NOIKEUDET
+    KATSO MY?S
+
+Kappale
+.B [NIMI]
+tai
+.BR [YLEISKATSAUS] ,
+joka l?ytyy sis?llytystiedostosta, korvaa muutoin automaattisesti
+tuotettavan osan (vaikka t?m?nkin voi korvata
+.B --name
+-valitsimella tarvittaessa).
+
+Muut kappaleet aloittavat automaattisesti tuotetun tulosteen aiemmin
+mainituille vakiokappaleille, tai ne sis?llytet??n kohtaan
+.I muut
+samassa j?rjestyksess? kuin ne esiintyv?t sis?llytystiedostossa.
+
+[SAATAVUUS]
+Tuorein versio t?st? sovelluksesta on saatavilla verkossa osoitteesta:
+
+    ftp://ftp.gnu.org/gnu/help2man/

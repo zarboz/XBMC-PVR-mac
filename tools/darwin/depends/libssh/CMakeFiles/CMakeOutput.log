@@ -1,0 +1,592 @@
+The system is: Darwin - 11.4.0 - i386
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec478218182/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec478218182.dir/build.make CMakeFiles/cmTryCompileExec478218182.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec478218182.dir/testCCompiler.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec478218182.dir/testCCompiler.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec478218182
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec478218182.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec478218182.dir/testCCompiler.c.o  -o cmTryCompileExec478218182  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec1437637132/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec1437637132.dir/build.make CMakeFiles/cmTryCompileExec1437637132.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1437637132.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec1437637132.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec1437637132
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1437637132.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec1437637132.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1437637132   
+Using built-in specs.
+Target: i686-apple-darwin11
+Configured with: /private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/src/configure --disable-checking --enable-werror --prefix=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2 --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-prefix=llvm- --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin11 --enable-llvm=/private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/dst-llvmCore/Developer/usr/local --program-prefix=i686-apple-darwin11- --host=x86_64-apple-darwin11 --target=i686-apple-darwin11 --with-gxx-include-dir=/usr/include/c++/4.2.1
+Thread model: posix
+gcc version 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
+ /usr/llvm-gcc-4.2/bin/../libexec/gcc/i686-apple-darwin11/4.2.1/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.4 -weak_reference_mismatches non-weak -o cmTryCompileExec1437637132 -lcrt1.10.6.o -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec1437637132.dir/CMakeCCompilerABI.c.o -lSystem -lgcc -lSystem
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/opt/local/bin/gmake "cmTryCompileExec1437637132/fast"]
+  ignore line: [/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec1437637132.dir/build.make CMakeFiles/cmTryCompileExec1437637132.dir/build]
+  ignore line: [gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp']
+  ignore line: [/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1437637132.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec1437637132.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec1437637132]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1437637132.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec1437637132.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1437637132   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: i686-apple-darwin11]
+  ignore line: [Configured with: /private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/src/configure --disable-checking --enable-werror --prefix=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2 --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-prefix=llvm- --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin11 --enable-llvm=/private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/dst-llvmCore/Developer/usr/local --program-prefix=i686-apple-darwin11- --host=x86_64-apple-darwin11 --target=i686-apple-darwin11 --with-gxx-include-dir=/usr/include/c++/4.2.1]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)]
+  link line: [ /usr/llvm-gcc-4.2/bin/../libexec/gcc/i686-apple-darwin11/4.2.1/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.4 -weak_reference_mismatches non-weak -o cmTryCompileExec1437637132 -lcrt1.10.6.o -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec1437637132.dir/CMakeCCompilerABI.c.o -lSystem -lgcc -lSystem]
+    arg [/usr/llvm-gcc-4.2/bin/../libexec/gcc/i686-apple-darwin11/4.2.1/collect2] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.7.4] ==> ignore
+    arg [-weak_reference_mismatches] ==> ignore
+    arg [non-weak] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1437637132] ==> ignore
+    arg [-lcrt1.10.6.o] ==> lib [crt1.10.6.o]
+    arg [-L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64] ==> dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64]
+    arg [-L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64] ==> dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64]
+    arg [-L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1] ==> dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1]
+    arg [-L/usr/llvm-gcc-4.2/bin/../lib/gcc] ==> dir [/usr/llvm-gcc-4.2/bin/../lib/gcc]
+    arg [-L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1] ==> dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1]
+    arg [-L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../..] ==> dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../..]
+    arg [-L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../..] ==> dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../..]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec1437637132.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lSystem] ==> lib [System]
+  remove lib [crt1.10.6.o]
+  remove lib [System]
+  remove lib [gcc]
+  remove lib [System]
+  collapse dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64] ==> [/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64]
+  collapse dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64] ==> [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64]
+  collapse dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1] ==> [/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1]
+  collapse dir [/usr/llvm-gcc-4.2/bin/../lib/gcc] ==> [/usr/llvm-gcc-4.2/lib/gcc]
+  collapse dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1] ==> [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1]
+  collapse dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../..] ==> [/usr/llvm-gcc-4.2/lib]
+  collapse dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../..] ==> [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib]
+  implicit libs: []
+  implicit dirs: [/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64;/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64;/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1;/usr/llvm-gcc-4.2/lib/gcc;/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1;/usr/llvm-gcc-4.2/lib;/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib]
+
+
+Performing C SOURCE FILE Test WITH_FPIC succeded with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec623035168/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec623035168.dir/build.make CMakeFiles/cmTryCompileExec623035168.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec623035168.dir/src.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute  -DWITH_FPIC   -fPIC -o CMakeFiles/cmTryCompileExec623035168.dir/src.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec623035168
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec623035168.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute  -DWITH_FPIC -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec623035168.dir/src.c.o  -o cmTryCompileExec623035168  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test WITH_STACK_PROTECTOR succeded with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3176600376/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3176600376.dir/build.make CMakeFiles/cmTryCompileExec3176600376.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3176600376.dir/src.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC  -DWITH_STACK_PROTECTOR   -fstack-protector -o CMakeFiles/cmTryCompileExec3176600376.dir/src.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/src.c
+/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/src.c:1: warning: unused parameter ‘argv’
+Linking C executable cmTryCompileExec3176600376
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3176600376.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC  -DWITH_STACK_PROTECTOR -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3176600376.dir/src.c.o  -o cmTryCompileExec3176600376  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(int argc, char **argv) { char buffer[256]; return buffer[argc]=0;}
+Performing C SOURCE FILE Test WITH_FORTIFY_SOURCE succeded with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3888891461/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3888891461.dir/build.make CMakeFiles/cmTryCompileExec3888891461.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3888891461.dir/src.c.o
+/usr/bin/gcc  -D_FORTIFY_SOURCE=2 -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector  -DWITH_FORTIFY_SOURCE   -o CMakeFiles/cmTryCompileExec3888891461.dir/src.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3888891461
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3888891461.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector  -DWITH_FORTIFY_SOURCE -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3888891461.dir/src.c.o  -o cmTryCompileExec3888891461  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3650542588/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3650542588.dir/build.make CMakeFiles/cmTryCompileExec3650542588.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3650542588.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec3650542588.dir/CheckIncludeFiles.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3650542588
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3650542588.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3650542588.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3650542588  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3987126412/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3987126412.dir/build.make CMakeFiles/cmTryCompileExec3987126412.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3987126412.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3987126412.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3987126412
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3987126412.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3987126412.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3987126412  -lpthread 
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test WITH_VISIBILITY_HIDDEN succeded with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec2642170839/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2642170839.dir/build.make CMakeFiles/cmTryCompileExec2642170839.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2642170839.dir/src.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DWITH_VISIBILITY_HIDDEN   -fvisibility=hidden -o CMakeFiles/cmTryCompileExec2642170839.dir/src.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2642170839
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2642170839.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DWITH_VISIBILITY_HIDDEN -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2642170839.dir/src.c.o  -o cmTryCompileExec2642170839  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file termios.h exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec2089928641/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2089928641.dir/build.make CMakeFiles/cmTryCompileExec2089928641.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2089928641.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec2089928641.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2089928641
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2089928641.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2089928641.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2089928641  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file openssl/aes.h exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec491444281/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec491444281.dir/build.make CMakeFiles/cmTryCompileExec491444281.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec491444281.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec491444281.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec491444281
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec491444281.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec491444281.dir/CheckIncludeFile.c.o  -o cmTryCompileExec491444281  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file openssl/blowfish.h exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec417757358/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec417757358.dir/build.make CMakeFiles/cmTryCompileExec417757358.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec417757358.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec417757358.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec417757358
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec417757358.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec417757358.dir/CheckIncludeFile.c.o  -o cmTryCompileExec417757358  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file openssl/des.h exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec4182810322/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec4182810322.dir/build.make CMakeFiles/cmTryCompileExec4182810322.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4182810322.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec4182810322.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4182810322
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4182810322.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4182810322.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4182810322  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file openssl/ecdh.h exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec632576283/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec632576283.dir/build.make CMakeFiles/cmTryCompileExec632576283.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec632576283.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec632576283.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec632576283
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec632576283.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec632576283.dir/CheckIncludeFile.c.o  -o cmTryCompileExec632576283  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file openssl/ec.h exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec1143893154/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec1143893154.dir/build.make CMakeFiles/cmTryCompileExec1143893154.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1143893154.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec1143893154.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1143893154
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1143893154.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1143893154.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1143893154  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file openssl/ecdsa.h exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec1781737017/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec1781737017.dir/build.make CMakeFiles/cmTryCompileExec1781737017.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1781737017.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec1781737017.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1781737017
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1781737017.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1781737017.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1781737017  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strncpy exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3137781196/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3137781196.dir/build.make CMakeFiles/cmTryCompileExec3137781196.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3137781196.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=strncpy   -o CMakeFiles/cmTryCompileExec3137781196.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+/opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c:3: warning: conflicting types for built-in function ‘strncpy’
+Linking C executable cmTryCompileExec3137781196
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3137781196.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=strncpy -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3137781196.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3137781196  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the function vsnprintf exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec4141364823/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec4141364823.dir/build.make CMakeFiles/cmTryCompileExec4141364823.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4141364823.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=vsnprintf   -o CMakeFiles/cmTryCompileExec4141364823.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+/opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c:3: warning: conflicting types for built-in function ‘vsnprintf’
+Linking C executable cmTryCompileExec4141364823
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4141364823.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=vsnprintf -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4141364823.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4141364823  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the function snprintf exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec369477176/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec369477176.dir/build.make CMakeFiles/cmTryCompileExec369477176.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec369477176.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=snprintf   -o CMakeFiles/cmTryCompileExec369477176.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+/opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c:3: warning: conflicting types for built-in function ‘snprintf’
+Linking C executable cmTryCompileExec369477176
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec369477176.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=snprintf -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec369477176.dir/CheckFunctionExists.c.o  -o cmTryCompileExec369477176  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the function hstrerror exists in the resolv passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec290845541/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec290845541.dir/build.make CMakeFiles/cmTryCompileExec290845541.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec290845541.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=hstrerror   -o CMakeFiles/cmTryCompileExec290845541.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec290845541
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec290845541.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=hstrerror -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec290845541.dir/CheckFunctionExists.c.o  -o cmTryCompileExec290845541  -lresolv 
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the function forkpty exists in the util passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec2488371534/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2488371534.dir/build.make CMakeFiles/cmTryCompileExec2488371534.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2488371534.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=forkpty   -o CMakeFiles/cmTryCompileExec2488371534.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2488371534
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2488371534.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=forkpty -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2488371534.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2488371534  -lutil -lresolv 
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getaddrinfo exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3042148198/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3042148198.dir/build.make CMakeFiles/cmTryCompileExec3042148198.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3042148198.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=getaddrinfo   -o CMakeFiles/cmTryCompileExec3042148198.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3042148198
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3042148198.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=getaddrinfo -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3042148198.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3042148198  -lresolv 
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the function poll exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec422623350/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec422623350.dir/build.make CMakeFiles/cmTryCompileExec422623350.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec422623350.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=poll   -o CMakeFiles/cmTryCompileExec422623350.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec422623350
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec422623350.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=poll -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec422623350.dir/CheckFunctionExists.c.o  -o cmTryCompileExec422623350  -lresolv 
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the function select exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec2096969841/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2096969841.dir/build.make CMakeFiles/cmTryCompileExec2096969841.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2096969841.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=select   -o CMakeFiles/cmTryCompileExec2096969841.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2096969841
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2096969841.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=select -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2096969841.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2096969841  -lresolv 
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the function cfmakeraw exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec452156924/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec452156924.dir/build.make CMakeFiles/cmTryCompileExec452156924.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec452156924.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=cfmakeraw   -o CMakeFiles/cmTryCompileExec452156924.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec452156924
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec452156924.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=cfmakeraw -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec452156924.dir/CheckFunctionExists.c.o  -o cmTryCompileExec452156924  -lresolv 
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3650359618/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3650359618.dir/build.make CMakeFiles/cmTryCompileExec3650359618.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3650359618.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec3650359618.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3650359618
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3650359618.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3650359618.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3650359618  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3847691886/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3847691886.dir/build.make CMakeFiles/cmTryCompileExec3847691886.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3847691886.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec3847691886.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3847691886
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3847691886.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3847691886.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3847691886  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec4111473801/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec4111473801.dir/build.make CMakeFiles/cmTryCompileExec4111473801.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4111473801.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec4111473801.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4111473801
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4111473801.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4111473801.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4111473801  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3480849709/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3480849709.dir/build.make CMakeFiles/cmTryCompileExec3480849709.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3480849709.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec3480849709.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec3480849709
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3480849709.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3480849709.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTryCompileExec3480849709  -lresolv 
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CompilerIdCXX/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec917135304/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec917135304.dir/build.make CMakeFiles/cmTryCompileExec917135304.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec917135304.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec917135304.dir/testCXXCompiler.cxx.o -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec917135304
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec917135304.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec917135304.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec917135304  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3880875673/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3880875673.dir/build.make CMakeFiles/cmTryCompileExec3880875673.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3880875673.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3880875673.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3880875673
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3880875673.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec3880875673.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3880875673   
+Apple clang version 3.1 (tags/Apple/clang-318.0.61) (based on LLVM 3.1svn)
+Target: x86_64-apple-darwin11.4.0
+Thread model: posix
+ "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.7.4 -o cmTryCompileExec3880875673 -lcrt1.10.6.o -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec3880875673.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem /usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3880875673/fast"]
+  ignore line: [/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3880875673.dir/build.make CMakeFiles/cmTryCompileExec3880875673.dir/build]
+  ignore line: [gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp']
+  ignore line: [/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3880875673.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3880875673.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3880875673]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3880875673.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec3880875673.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3880875673   ]
+  ignore line: [Apple clang version 3.1 (tags/Apple/clang-318.0.61) (based on LLVM 3.1svn)]
+  ignore line: [Target: x86_64-apple-darwin11.4.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.7.4 -o cmTryCompileExec3880875673 -lcrt1.10.6.o -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec3880875673.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem /usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.7.4] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3880875673] ==> ignore
+    arg [-lcrt1.10.6.o] ==> lib [crt1.10.6.o]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3880875673.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lSystem] ==> lib [System]
+    arg [/usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a] ==> lib [/usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a]
+  remove lib [crt1.10.6.o]
+  remove lib [System]
+  implicit libs: [stdc++;/usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: []
+
+

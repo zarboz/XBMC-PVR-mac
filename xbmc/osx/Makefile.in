@@ -1,0 +1,21 @@
+abs_top_srcdir=@abs_top_srcdir@
+
+INCLUDES=-I$(abs_top_srcdir) \
+	 -I$(abs_top_srcdir)/xbmc \
+	 -I$(abs_top_srcdir)/xbmc/linux
+
+.SUFFIXES : .m .mm
+
+SRCS = \
+	SDLMain.mm \
+	XBMCHelper.m \
+	AutoPool.mm \
+	DarwinUtils.mm \
+	CocoaInterface.mm \
+	HotKeyController.m \
+	CoreAudio.cpp \
+	OSXGNUReplacements.c \
+	
+LIB=osx.a
+
+include $(abs_top_srcdir)/Makefile.include

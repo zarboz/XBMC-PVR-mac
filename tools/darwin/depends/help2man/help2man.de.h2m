@@ -1,0 +1,73 @@
+Include file for help2man man page
+
+--locale=de_DE.UTF-8
+
+[NAME]
+help2man \- generate a simple manual page
+
+[INCLUDE FILES]
+Additional material may be included in the generated output with the
+.B \-\-include
+and
+.B \-\-opt\-include
+options.  The format is simple:
+
+    [section]
+    text
+
+    /pattern/
+    text
+
+Blocks of verbatim *roff text are inserted into the output either at
+the start of the given
+.BI [ section ]
+(case insensitive), or after a paragraph matching
+.BI / pattern /\fR.
+
+Patterns use the Perl regular expression syntax and may be followed by
+the
+.IR i ,
+.I s
+or
+.I m
+modifiers (see
+.BR perlre (1)).
+
+Lines before the first section or pattern which begin with `\-' are
+processed as options.  Anything else is silently ignored and may be
+used for comments, RCS keywords and the like.
+
+The section output order (for those included) is:
+
+    NAME
+    SYNOPSIS
+    DESCRIPTION
+    OPTIONS
+    ENVIRONMENT
+    FILES
+    EXAMPLES
+    \fIother\fR
+    AUTHOR
+    REPORTING BUGS
+    COPYRIGHT
+    SEE ALSO
+
+Any
+.B [NAME]
+or
+.B [SYNOPSIS]
+sections appearing in the include file will replace what would have
+automatically been produced (although you can still override the
+former with
+.B --name
+if required).
+
+Other sections are prepended to the automatically produced output for
+the standard sections given above, or included at
+.I other
+(above) in the order they were encountered in the include file.
+
+[AVAILABILITY]
+The latest version of this distribution is available on-line from:
+
+    ftp://ftp.gnu.org/gnu/help2man/

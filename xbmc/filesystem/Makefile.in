@@ -1,0 +1,131 @@
+ARCH=@ARCH@
+
+CXXFLAGS+=-D__STDC_FORMAT_MACROS \
+
+SRCS=AddonsDirectory.cpp \
+     ASAPFileDirectory.cpp \
+     CacheStrategy.cpp \
+     CircularCache.cpp \
+     CDDADirectory.cpp \
+     CDDAFile.cpp \
+     CurlFile.cpp \
+     DAAPDirectory.cpp \
+     DAAPFile.cpp \
+     DAVDirectory.cpp \
+     Directory.cpp \
+     DirectoryCache.cpp \
+     DirectoryFactory.cpp \
+     DirectoryHistory.cpp \
+     DllLibCurl.cpp \
+     File.cpp \
+     FileCache.cpp \
+     FileDirectoryFactory.cpp \
+     FileFactory.cpp \
+     FileReaderFile.cpp \
+     FTPDirectory.cpp \
+     FTPParse.cpp \
+     HDDirectory.cpp \
+     HDFile.cpp \
+     HDHomeRunDirectory.cpp \
+     HDHomeRunFile.cpp \
+     HTSPDirectory.cpp \
+     HTSPSession.cpp \
+     HTTPDirectory.cpp \
+     IDirectory.cpp \
+     IFile.cpp \
+     ImageFile.cpp \
+     iso9660.cpp \
+     ISO9660Directory.cpp \
+     ISOFile.cpp \
+     LastFMDirectory.cpp \
+     LastFMFile.cpp \
+     LibraryDirectory.cpp \
+     MemBufferCache.cpp \
+     MultiPathDirectory.cpp \
+     MultiPathFile.cpp \
+     MusicDatabaseDirectory.cpp \
+     MusicDatabaseFile.cpp \
+     MusicFileDirectory.cpp \
+     MusicSearchDirectory.cpp \
+     MythDirectory.cpp \
+     MythFile.cpp \
+     MythSession.cpp \
+     NptXbmcFile.cpp \
+     NSFFileDirectory.cpp \
+     OGGFileDirectory.cpp \
+     PlaylistDirectory.cpp \
+     PlaylistFileDirectory.cpp \
+     PipeFile.cpp \
+     PipesManager.cpp \
+     PluginDirectory.cpp \
+     PVRFile.cpp \
+     PVRDirectory.cpp \
+     RSSDirectory.cpp \
+     RTVDirectory.cpp \
+     RTVFile.cpp \
+     SAPDirectory.cpp \
+     SAPFile.cpp \
+     SFTPDirectory.cpp \
+     SFTPFile.cpp \
+     SIDFileDirectory.cpp \
+     ShoutcastFile.cpp \
+     SlingboxDirectory.cpp \
+     SlingboxFile.cpp \
+     SmartPlaylistDirectory.cpp \
+     SourcesDirectory.cpp \
+     SpecialProtocol.cpp \
+     SpecialProtocolDirectory.cpp \
+     SpecialProtocolFile.cpp \
+     StackDirectory.cpp \
+     TuxBoxDirectory.cpp \
+     TuxBoxFile.cpp \
+     udf25.cpp \
+     UDFDirectory.cpp \
+     UDFFile.cpp \
+     UPnPDirectory.cpp \
+     UPnPFile.cpp \
+     VideoDatabaseDirectory.cpp \
+     VirtualDirectory.cpp \
+     VTPDirectory.cpp \
+     VTPFile.cpp \
+     VTPSession.cpp \
+     ZeroconfDirectory.cpp \
+     ZipDirectory.cpp \
+     ZipFile.cpp \
+     ZipManager.cpp
+
+ifeq (@HAVE_XBMC_NONFREE@,1)
+SRCS+=RarFile.cpp
+SRCS+=RarDirectory.cpp
+SRCS+=RarManager.cpp
+endif
+
+ifeq (@USE_LIBSMBCLIENT@,1)
+SRCS+=SmbFile.cpp
+SRCS+=SMBDirectory.cpp
+endif
+
+ifeq (@USE_LIBNFS@,1)
+SRCS+=NFSFile.cpp
+SRCS+=NFSDirectory.cpp
+endif
+
+ifeq (@USE_LIBAFPCLIENT@,1)
+SRCS+=AFPFile.cpp
+SRCS+=AFPDirectory.cpp
+endif
+
+ifeq (@HAVE_LIBBLURAY@,1)
+SRCS+=BlurayDirectory.cpp
+endif
+
+INCLUDES+=-I@abs_top_srcdir@/lib/libUPnP/Platinum/Source/Core \
+          -I@abs_top_srcdir@/lib/libUPnP/Platinum/Source/Platinum \
+          -I@abs_top_srcdir@/lib/libUPnP/Platinum/Source/Devices/MediaServer \
+          -I@abs_top_srcdir@/lib/libUPnP/Neptune/Source/System/Posix \
+          -I@abs_top_srcdir@/lib/libUPnP/Neptune/Source/Core
+
+LIB=filesystem.a
+
+include @abs_top_srcdir@/Makefile.include
+-include $(patsubst %.cpp,%.P,$(patsubst %.c,%.P,$(SRCS)))

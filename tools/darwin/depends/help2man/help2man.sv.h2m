@@ -1,0 +1,72 @@
+Include file for help2man man page
+
+--locale=sv_SE.ISO-8859-15
+
+[NAMN]
+help2man \- generera en enkel manualsida
+
+[INKLUDERA FILER]
+Ytterligare material kan inkluderas i den genererade utskriften med flaggorna
+.B \-\-include
+och
+.B \-\-opt\-include
+Formatet ?r enkelt:
+
+    [sektion]
+    text
+
+    /m?nster/
+    text
+
+Block av *roff-text infogas ord f?r ord i utskriften antingen vid
+b?rjan av angiven
+.BI [ section ]
+(ok?nslig f?r skiftl?ge), eller efter en paragraf som matchar
+.BI / m?nster /\fR.
+
+M?nster anv?nder Perls syntax f?r regulj?ra uttryck och kan efterf?ljas av modifierarna
+.IR i ,
+.I s
+eller
+.I m
+(se
+.BR perlre (1)).
+
+Rader f?re den f?rsta sektionen eller m?nstret som b?rjar med "\-"
+behandlas som flaggor.  Allt annat ignoreras tyst och kan anv?ndas
+f?r kommentarer, RCS-nyckelord och liknande.
+
+Ordning p? sektionsutskriften ?r:
+
+    NAMN
+    SYNOPSIS
+    BESKRIVNING
+    FLAGGOR
+    ENVIRONMENT
+    FILES
+    EXEMPEL
+    \fI?vrigt\fR
+    UPPHOVSMAN
+    RAPPORTERA FEL
+    COPYRIGHT
+    SE OCKS?
+
+Alla sektioner
+.B [namn]
+eller
+.B [synopsis]
+som visas i inkluderingsfilen kommer att ers?tta vad som skulle
+automatiskt bli producerat (?ven om du fortfarande kan ?sidos?tta
+de senare med
+.B --name
+om det kr?vs).
+
+Andra sektioner l?ggs till i b?rjan av den automatiskt producerade utskriften
+f?r standardsektionerna angivna ovan, eller inkluderas vid
+.I ?vrigt
+(ovan) i den ordning de p?tr?ffades i inkluderingsfilen.
+
+[TILLG?NGLIGHET]
+Senaste versionen av den h?r utg?van finns tillg?nglig online fr?n:
+
+    ftp://ftp.gnu.org/gnu/help2man/

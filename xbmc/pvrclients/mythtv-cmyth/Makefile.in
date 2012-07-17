@@ -1,0 +1,34 @@
+#
+# Makefile for the XBMC MythTV cmyth PVR AddOn
+#
+# See the README for copyright information and
+# how to reach the author.
+#
+
+LIBS   = -lboost_system -lboost_filesystem -lboost_regex -ldl
+LIBDIR = @abs_top_srcdir@/addons/pvr.mythtv.cmyth
+LIB    = @abs_top_srcdir@/addons/pvr.mythtv.cmyth/XBMC_MythTV_cmyth.pvr
+
+SRCS=client.cpp \
+     cppmyth/MythChannel.cpp \
+     cppmyth/MythConnection.cpp \
+     cppmyth/MythDatabase.cpp \
+     cppmyth/MythEventHandler.cpp \
+     cppmyth/MythFile.cpp \
+     cppmyth/MythProgramInfo.cpp \
+     cppmyth/MythRecorder.cpp \
+     cppmyth/MythSignal.cpp \
+     cppmyth/MythTimer.cpp \
+     cppmyth/MythTimestamp.cpp \
+	 cppmyth/MythSGFile.cpp \
+     fileOps.cpp \
+     pvrclient-mythtv.cpp \
+     recordingRules.cpp \
+
+include ../Makefile.include
+
+clean:
+	-rm -f $(OBJS) $(LIB) *.P *~
+
+$(LIB): $(OBJS)
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -shared -g $(OBJS) $(LIBS) $(LIBDIRS) $(SILIB) -o $(LIB)

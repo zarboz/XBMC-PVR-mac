@@ -1,0 +1,6 @@
+/Users/bryansmith/xbmc/tools/darwin/depends/examples/CMakeFiles/exec.dir
+/Users/bryansmith/xbmc/tools/darwin/depends/examples/CMakeFiles/libsshpp.dir
+/Users/bryansmith/xbmc/tools/darwin/depends/examples/CMakeFiles/libsshpp_noexcept.dir
+/Users/bryansmith/xbmc/tools/darwin/depends/examples/CMakeFiles/senddata.dir
+/Users/bryansmith/xbmc/tools/darwin/depends/src/CMakeFiles/ssh_shared.dir
+/Users/bryansmith/xbmc/tools/darwin/depends/src/threads/CMakeFiles/ssh_threads_shared.dir

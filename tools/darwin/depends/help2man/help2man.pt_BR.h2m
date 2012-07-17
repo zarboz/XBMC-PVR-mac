@@ -1,0 +1,74 @@
+Arquivo de inclusão para a página de manual do help2man
+
+--locale=pt_BR.UTF-8
+
+[NOME]
+help2man \- gera uma página de manual simples
+
+[ARQUIVOS INCLUSOS]
+Materiais adicionais podem ser incluídos na saída gerada com as opções
+.B \-\-include
+e
+.B \-\-opt\-include
+.  O formato é simples:
+
+    [seção]
+    texto
+
+    /padrão/
+    texto
+
+Blocos de texto *roff literais são inseridos na saída ou no início de
+uma dada
+.BI [ seção ]
+(indiferente à maiusculização), ou após um parágrafo que coincida com o
+.BI / padrão /\fR.
+
+Os padrões usam a sintaxe Perl de expressão regular e podem ser seguidos
+pelos modificadores
+.IR i ,
+.I s
+ou
+.I m
+(veja
+.BR perlre (1)).
+
+As linhas antes da primeira seção ou de um padrão que comece com
+"\-" são processados como opções. Qualquer outra coisa é ignorada
+silenciosamente e pode ser usada para comentários, palavras-chaves
+RCS e coisas do tipo.
+
+A ordem da saída das seções é:
+
+    NOME
+    SINOPSE
+    DESCRIÇÃO
+    OPÇÕES
+    ENVIRONMENT
+    FILES
+    EXEMPLOS
+    \fIoutra\fR
+    AUTOR
+    RELATANDO PROBLEMAS
+    DIREITOS AUTORAIS
+    VEJA TAMBÉM
+
+Quaisquer seções
+.B [nome]
+ou
+.B [sinopse]
+que apareçam no arquivo de inclusão substituirá o que seria
+produzido automaticamente (embora você ainda possa sobrepor
+o primeiro com
+.B --name
+se necessário).
+
+Outras seções são acrescentadas antes da saída produzida automaticamente
+para as seções padrões citadas acima ou inclusas na posição
+.I outra
+(acima) na ordem em que elas forem encontradas no arquivo de inclusão.
+
+[DISPONIBILIDADE]
+A última versão desta distribuição está disponível on-line em:
+
+    ftp://ftp.gnu.org/gnu/help2man/

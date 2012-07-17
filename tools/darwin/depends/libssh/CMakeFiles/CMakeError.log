@@ -1,0 +1,217 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec2921936168/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2921936168.dir/build.make CMakeFiles/cmTryCompileExec2921936168.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2921936168.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec2921936168.dir/CheckSymbolExists.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: ISO C forbids conversion of function pointer to object pointer type
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2921936168.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec2921936168/fast] Error 2
+
+File /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3421758395/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3421758395.dir/build.make CMakeFiles/cmTryCompileExec3421758395.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3421758395.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3421758395.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3421758395
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3421758395.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3421758395.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3421758395  -lpthreads 
+ld: library not found for -lpthreads
+collect2: ld returned 1 exit status
+gmake[1]: *** [cmTryCompileExec3421758395] Error 1
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec3421758395/fast] Error 2
+
+
+Determining if the include file argp.h exists failed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec590070479/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec590070479.dir/build.make CMakeFiles/cmTryCompileExec590070479.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec590070479.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec590070479.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:18: error: argp.h: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTryCompileExec590070479.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec590070479/fast] Error 2
+
+
+Determining if the include file pty.h exists failed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec347436723/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec347436723.dir/build.make CMakeFiles/cmTryCompileExec347436723.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec347436723.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec347436723.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:17: error: pty.h: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTryCompileExec347436723.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec347436723/fast] Error 2
+
+
+Determining if the function getaddrinfo exists in the socket failed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3899382374/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3899382374.dir/build.make CMakeFiles/cmTryCompileExec3899382374.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3899382374.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=getaddrinfo   -o CMakeFiles/cmTryCompileExec3899382374.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3899382374
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3899382374.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=getaddrinfo -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3899382374.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3899382374  -lsocket 
+ld: library not found for -lsocket
+collect2: ld returned 1 exit status
+gmake[1]: *** [cmTryCompileExec3899382374] Error 1
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec3899382374/fast] Error 2
+
+
+Determining if the function inet_pton exists in the nsl failed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec1769924190/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec1769924190.dir/build.make CMakeFiles/cmTryCompileExec1769924190.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1769924190.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=inet_pton   -o CMakeFiles/cmTryCompileExec1769924190.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1769924190
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1769924190.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=inet_pton -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1769924190.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1769924190  -lnsl -lresolv 
+ld: library not found for -lnsl
+collect2: ld returned 1 exit status
+gmake[1]: *** [cmTryCompileExec1769924190] Error 1
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec1769924190/fast] Error 2
+
+
+Determining if the function nanosleep exists in the rt failed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec1076082307/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec1076082307.dir/build.make CMakeFiles/cmTryCompileExec1076082307.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1076082307.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=nanosleep   -o CMakeFiles/cmTryCompileExec1076082307.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1076082307
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1076082307.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=nanosleep -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1076082307.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1076082307  -lrt -lresolv 
+ld: library not found for -lrt
+collect2: ld returned 1 exit status
+gmake[1]: *** [cmTryCompileExec1076082307] Error 1
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec1076082307/fast] Error 2
+
+
+Determining if the function clock_gettime exists in the rt failed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec2591313619/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2591313619.dir/build.make CMakeFiles/cmTryCompileExec2591313619.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2591313619.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTryCompileExec2591313619.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2591313619
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2591313619.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=clock_gettime -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2591313619.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2591313619  -lrt -lresolv 
+ld: library not found for -lrt
+collect2: ld returned 1 exit status
+gmake[1]: *** [cmTryCompileExec2591313619] Error 1
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec2591313619/fast] Error 2
+
+
+Determining if the function ntohll exists failed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec2837237214/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2837237214.dir/build.make CMakeFiles/cmTryCompileExec2837237214.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2837237214.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=ntohll   -o CMakeFiles/cmTryCompileExec2837237214.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2837237214
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2837237214.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2  -DCHECK_FUNCTION_EXISTS=ntohll -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2837237214.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2837237214  -lresolv 
+Undefined symbols for architecture x86_64:
+  "_ntohll", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+gmake[1]: *** [cmTryCompileExec2837237214] Error 1
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec2837237214/fast] Error 2
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec689979632/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec689979632.dir/build.make CMakeFiles/cmTryCompileExec689979632.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec689979632.dir/TestEndianess.c.o
+/usr/bin/gcc   -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2     -o CMakeFiles/cmTryCompileExec689979632.dir/TestEndianess.c.o   -c /Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec689979632
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec689979632.dir/link.txt --verbose=1
+/usr/bin/gcc    -std=gnu99 -pedantic -pedantic-errors -Wall -Wextra -Wshadow -Wmissing-prototypes -Wdeclaration-after-statement -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -fPIC -fstack-protector -D_FORTIFY_SOURCE=2   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec689979632.dir/TestEndianess.c.o  -o cmTryCompileExec689979632  
+gmake[1]: Leaving directory `/Users/bryansmith/xbmc/tools/darwin/depends/libssh/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+

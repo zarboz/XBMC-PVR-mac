@@ -1,0 +1,11 @@
+prefix=/Users/Shared/xbmc-depends/macosx10.7_i386
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries
+Version: 0.9.8r
+Requires: 
+Libs: -L${libdir} -lssl -lcrypto -lz
+Cflags: -I${includedir} 
