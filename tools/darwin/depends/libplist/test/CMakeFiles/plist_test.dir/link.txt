@@ -1,0 +1,1 @@
+/usr/bin/gcc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/plist_test.dir/plist_test.c.o  -o plist_test  ../src/libplist.1.1.6.dylib /opt/local/lib/libxml2.dylib 

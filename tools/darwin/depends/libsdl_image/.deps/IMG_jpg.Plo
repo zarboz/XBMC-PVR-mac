@@ -1,0 +1,1 @@
+IMG_jpg.lo IMG_jpg.o: IMG_jpg.c

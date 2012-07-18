@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include
+
+Name: libplist++
+Description: C++ binding of libplist
+Version: 1.6
+Requires: libplist >= 1.6
+Libs: -L/usr/local/lib -lplist++
+Cflags: -I/usr/local/include
+

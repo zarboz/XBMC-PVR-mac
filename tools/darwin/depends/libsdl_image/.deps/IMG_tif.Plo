@@ -1,0 +1,1 @@
+IMG_tif.lo IMG_tif.o: IMG_tif.c

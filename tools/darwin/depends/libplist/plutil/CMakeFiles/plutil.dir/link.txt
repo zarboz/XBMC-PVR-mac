@@ -1,0 +1,1 @@
+/usr/bin/gcc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/plutil.dir/plutil.c.o  -o plutil-1.6  ../src/libplist.1.1.6.dylib /opt/local/lib/libxml2.dylib 

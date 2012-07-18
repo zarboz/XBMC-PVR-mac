@@ -1,0 +1,2 @@
+/usr/bin/ar cr libcnary.a  CMakeFiles/libcnary.dir/iterator.c.o CMakeFiles/libcnary.dir/list.c.o CMakeFiles/libcnary.dir/node.c.o CMakeFiles/libcnary.dir/node_iterator.c.o CMakeFiles/libcnary.dir/node_list.c.o
+/usr/bin/ranlib libcnary.a

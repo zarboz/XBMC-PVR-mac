@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/libplist-1.6/plutil/plutil.c
+plist/plist.h
+/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/libplist-1.6/plutil/plist/plist.h
+plutil.h
+/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/libplist-1.6/plutil/plutil.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/stat.h
+-
+
+/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/libplist-1.6/plutil/plutil.h
+
+libplist-1.6/include/plist/plist.h
+stdint.h
+-
+sys/types.h
+-
+stdarg.h
+-
+

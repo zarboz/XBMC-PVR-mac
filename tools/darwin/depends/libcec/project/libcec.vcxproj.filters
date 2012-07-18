@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="exports">
+      <UniqueIdentifier>{01b9c84a-dcfe-4bdc-b983-69e3e3929b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="implementations">
+      <UniqueIdentifier>{03bd59df-ccac-4664-b61b-3151bb219efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="devices">
+      <UniqueIdentifier>{bfc43a58-636d-4c1a-b191-486cb8509c7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="adapter">
+      <UniqueIdentifier>{51614b77-8a0e-47a8-8500-5beb0fd12d49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{7d05b1b5-e728-4f9e-b78f-d63cac4ded8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\sockets">
+      <UniqueIdentifier>{6cfe4bad-ed3a-4a16-8c59-4489089f5fe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\util">
+      <UniqueIdentifier>{39a56ebf-ba93-4e7b-bf72-2f57b99a1ee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\threads">
+      <UniqueIdentifier>{be183456-d61e-4283-b642-fe25ed71e9c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\windows">
+      <UniqueIdentifier>{65c4a590-4577-40e4-91ad-339e20b99ebe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\lib\CECProcessor.h" />
+    <ClInclude Include="..\src\lib\LibCEC.h" />
+    <ClInclude Include="..\include\cec.h">
+      <Filter>exports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cecc.h">
+      <Filter>exports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cecloader.h">
+      <Filter>exports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cectypes.h">
+      <Filter>exports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\implementations\ANCommandHandler.h">
+      <Filter>implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\implementations\CECCommandHandler.h">
+      <Filter>implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\implementations\SLCommandHandler.h">
+      <Filter>implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\devices\CECBusDevice.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\implementations\VLCommandHandler.h">
+      <Filter>implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\devices\CECAudioSystem.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\devices\CECPlaybackDevice.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\devices\CECRecordingDevice.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\devices\CECTuner.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\devices\CECTV.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\os.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\sockets\serialport.h">
+      <Filter>platform\sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\sockets\socket.h">
+      <Filter>platform\sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\sockets\tcp.h">
+      <Filter>platform\sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\util\baudrate.h">
+      <Filter>platform\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\util\buffer.h">
+      <Filter>platform\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\util\StdString.h">
+      <Filter>platform\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\util\timeutils.h">
+      <Filter>platform\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\threads\mutex.h">
+      <Filter>platform\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\threads\threads.h">
+      <Filter>platform\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\windows\os-socket.h">
+      <Filter>platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\windows\os-threads.h">
+      <Filter>platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\windows\os-types.h">
+      <Filter>platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\platform\windows\stdint.h">
+      <Filter>platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\adapter\AdapterCommunication.h">
+      <Filter>adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\adapter\USBCECAdapterCommunication.h">
+      <Filter>adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\adapter\USBCECAdapterDetection.h">
+      <Filter>adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\adapter\USBCECAdapterMessage.h">
+      <Filter>adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lib\implementations\RLCommandHandler.h">
+      <Filter>implementations</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\lib\CECProcessor.cpp" />
+    <ClCompile Include="..\src\lib\LibCEC.cpp" />
+    <ClCompile Include="..\src\lib\LibCECC.cpp" />
+    <ClCompile Include="..\src\lib\LibCECDll.cpp" />
+    <ClCompile Include="..\src\lib\implementations\ANCommandHandler.cpp">
+      <Filter>implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\implementations\CECCommandHandler.cpp">
+      <Filter>implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\implementations\SLCommandHandler.cpp">
+      <Filter>implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\devices\CECBusDevice.cpp">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\implementations\VLCommandHandler.cpp">
+      <Filter>implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\devices\CECAudioSystem.cpp">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\devices\CECPlaybackDevice.cpp">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\devices\CECRecordingDevice.cpp">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\devices\CECTuner.cpp">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\devices\CECTV.cpp">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\platform\windows\serialport.cpp">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\adapter\USBCECAdapterCommunication.cpp">
+      <Filter>adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\adapter\USBCECAdapterDetection.cpp">
+      <Filter>adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lib\implementations\RLCommandHandler.cpp">
+      <Filter>implementations</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="libcec.rc" />
+  </ItemGroup>
+</Project>

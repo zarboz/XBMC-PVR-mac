@@ -1,0 +1,254 @@
+The system is: Darwin - 11.4.0 - i386
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec2361086818/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2361086818.dir/build.make CMakeFiles/cmTryCompileExec2361086818.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2361086818.dir/testCCompiler.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2361086818.dir/testCCompiler.c.o   -c /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec2361086818
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2361086818.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2361086818.dir/testCCompiler.c.o  -o cmTryCompileExec2361086818  
+gmake[1]: Leaving directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec56024200/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec56024200.dir/build.make CMakeFiles/cmTryCompileExec56024200.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec56024200.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec56024200.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec56024200
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec56024200.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec56024200.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec56024200   
+Using built-in specs.
+Target: i686-apple-darwin11
+Configured with: /private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/src/configure --disable-checking --enable-werror --prefix=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2 --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-prefix=llvm- --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin11 --enable-llvm=/private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/dst-llvmCore/Developer/usr/local --program-prefix=i686-apple-darwin11- --host=x86_64-apple-darwin11 --target=i686-apple-darwin11 --with-gxx-include-dir=/usr/include/c++/4.2.1
+Thread model: posix
+gcc version 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
+ /usr/llvm-gcc-4.2/bin/../libexec/gcc/i686-apple-darwin11/4.2.1/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.4 -weak_reference_mismatches non-weak -o cmTryCompileExec56024200 -lcrt1.10.6.o -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec56024200.dir/CMakeCCompilerABI.c.o -lSystem -lgcc -lSystem
+gmake[1]: Leaving directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/opt/local/bin/gmake "cmTryCompileExec56024200/fast"]
+  ignore line: [/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec56024200.dir/build.make CMakeFiles/cmTryCompileExec56024200.dir/build]
+  ignore line: [gmake[1]: Entering directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp']
+  ignore line: [/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec56024200.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec56024200.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec56024200]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec56024200.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec56024200.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec56024200   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: i686-apple-darwin11]
+  ignore line: [Configured with: /private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/src/configure --disable-checking --enable-werror --prefix=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2 --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-prefix=llvm- --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin11 --enable-llvm=/private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/dst-llvmCore/Developer/usr/local --program-prefix=i686-apple-darwin11- --host=x86_64-apple-darwin11 --target=i686-apple-darwin11 --with-gxx-include-dir=/usr/include/c++/4.2.1]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)]
+  link line: [ /usr/llvm-gcc-4.2/bin/../libexec/gcc/i686-apple-darwin11/4.2.1/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.4 -weak_reference_mismatches non-weak -o cmTryCompileExec56024200 -lcrt1.10.6.o -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec56024200.dir/CMakeCCompilerABI.c.o -lSystem -lgcc -lSystem]
+    arg [/usr/llvm-gcc-4.2/bin/../libexec/gcc/i686-apple-darwin11/4.2.1/collect2] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.7.4] ==> ignore
+    arg [-weak_reference_mismatches] ==> ignore
+    arg [non-weak] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec56024200] ==> ignore
+    arg [-lcrt1.10.6.o] ==> lib [crt1.10.6.o]
+    arg [-L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64] ==> dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64]
+    arg [-L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64] ==> dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64]
+    arg [-L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1] ==> dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1]
+    arg [-L/usr/llvm-gcc-4.2/bin/../lib/gcc] ==> dir [/usr/llvm-gcc-4.2/bin/../lib/gcc]
+    arg [-L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1] ==> dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1]
+    arg [-L/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../..] ==> dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../..]
+    arg [-L/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../..] ==> dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../..]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec56024200.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lSystem] ==> lib [System]
+  remove lib [crt1.10.6.o]
+  remove lib [System]
+  remove lib [gcc]
+  remove lib [System]
+  collapse dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64] ==> [/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64]
+  collapse dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64] ==> [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64]
+  collapse dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1] ==> [/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1]
+  collapse dir [/usr/llvm-gcc-4.2/bin/../lib/gcc] ==> [/usr/llvm-gcc-4.2/lib/gcc]
+  collapse dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1] ==> [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1]
+  collapse dir [/usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../..] ==> [/usr/llvm-gcc-4.2/lib]
+  collapse dir [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/../../..] ==> [/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib]
+  implicit libs: []
+  implicit dirs: [/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64;/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/x86_64;/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1;/usr/llvm-gcc-4.2/lib/gcc;/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1;/usr/llvm-gcc-4.2/lib;/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3673063919/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3673063919.dir/build.make CMakeFiles/cmTryCompileExec3673063919.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3673063919.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3673063919.dir/testCXXCompiler.cxx.o -c /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3673063919
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3673063919.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3673063919.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3673063919  
+gmake[1]: Leaving directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec109365632/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec109365632.dir/build.make CMakeFiles/cmTryCompileExec109365632.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec109365632.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec109365632.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec109365632
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec109365632.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec109365632.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec109365632   
+Apple clang version 3.1 (tags/Apple/clang-318.0.61) (based on LLVM 3.1svn)
+Target: x86_64-apple-darwin11.4.0
+Thread model: posix
+ "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.7.4 -o cmTryCompileExec109365632 -lcrt1.10.6.o -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec109365632.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem /usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a
+gmake[1]: Leaving directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/opt/local/bin/gmake "cmTryCompileExec109365632/fast"]
+  ignore line: [/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec109365632.dir/build.make CMakeFiles/cmTryCompileExec109365632.dir/build]
+  ignore line: [gmake[1]: Entering directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp']
+  ignore line: [/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec109365632.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec109365632.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec109365632]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec109365632.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec109365632.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec109365632   ]
+  ignore line: [Apple clang version 3.1 (tags/Apple/clang-318.0.61) (based on LLVM 3.1svn)]
+  ignore line: [Target: x86_64-apple-darwin11.4.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.7.4 -o cmTryCompileExec109365632 -lcrt1.10.6.o -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec109365632.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem /usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.7.4] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec109365632] ==> ignore
+    arg [-lcrt1.10.6.o] ==> lib [crt1.10.6.o]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec109365632.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lSystem] ==> lib [System]
+    arg [/usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a] ==> lib [/usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a]
+  remove lib [crt1.10.6.o]
+  remove lib [System]
+  implicit libs: [stdc++;/usr/bin/../lib/clang/3.1/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: []
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec2389931593/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2389931593.dir/build.make CMakeFiles/cmTryCompileExec2389931593.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2389931593.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2389931593.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2389931593
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2389931593.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2389931593.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2389931593  
+gmake[1]: Leaving directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec3337034230/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3337034230.dir/build.make CMakeFiles/cmTryCompileExec3337034230.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3337034230.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec3337034230.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3337034230
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3337034230.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3337034230.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3337034230  
+gmake[1]: Leaving directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec4085215743/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec4085215743.dir/build.make CMakeFiles/cmTryCompileExec4085215743.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4085215743.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec4085215743.dir/CheckIncludeFile.c.o   -c /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4085215743
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4085215743.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4085215743.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4085215743  
+gmake[1]: Leaving directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp
+
+Run Build Command:/opt/local/bin/gmake "cmTryCompileExec2045222995/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2045222995.dir/build.make CMakeFiles/cmTryCompileExec2045222995.dir/build
+gmake[1]: Entering directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2045222995.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2045222995.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec2045222995
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2045222995.dir/link.txt --verbose=1
+/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2045222995.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTryCompileExec2045222995  
+gmake[1]: Leaving directory `/Users/bryansmith/XBMC-PVR-mac/tools/darwin/depends/libplist/CMakeFiles/CMakeTmp'
+
+

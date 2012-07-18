@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include
+
+Name: libplist
+Description: A library to handle Apple Property Lists whereas they are binary or XML
+Version: 1.6
+Requires.private: libxml-2.0 >= 2.6.30
+Libs: -L/usr/local/lib -lplist
+Cflags: -I/usr/local/include
+

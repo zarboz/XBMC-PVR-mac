@@ -1,0 +1,92 @@
+This library provides support for the Pulse-Eight USB-CEC adapter.
+
+===============================================================================
+                                === Linux ===
+===============================================================================
+
+libCEC needs the following dependencies in order to work correctly:
+* udev v151 or later
+* cdc-acm support compiled into the kernel or available as module
+
+To compile libCEC on Linux, you'll need the following dependencies:
+* autoconf 2.13 or later
+* automake 1.11 or later
+* pkg-config
+* libtool
+* udev development headers v151 or later
+* gcc 4.2 or later
+
+To compile, execute the following commands:
+# autoreconf -vif
+# ./configure --prefix=/usr
+# make
+# sudo make install
+
+===============================================================================
+                                === OS-X ===
+===============================================================================
+
+To compile libCEC on OS-X, you'll need the following dependencies:
+* autoconf 2.13 or later
+* automake 1.11 or later
+* pkg-config
+* xcode (TODO: version?)
+
+To compile, execute the following commands (TODO: please verify):
+# autoreconf -vif
+# ./configure --prefix=/usr
+# make
+# sudo make install
+
+===============================================================================
+                              === Windows ===
+===============================================================================
+
+To compile libCEC on Windows, you'll need Visual C++ 2010 or Visual Studio 2010
+The installer needs the Windows DDK (Driver Development Kit) and Nullsoft's
+NSIS.
+
+To compile libCEC, follow these instructions:
+* open /project/libcec.sln with Visual C++ 2010 or Visual Studio 2010.
+* build the project.
+
+To build an installer on Windows:
+* download and install the Windows DDK.
+* download and install NSIS.
+* go to /project and execute create-installer.cmd to create the installer.
+* the installer is stored as /project/libCEC-installer.exe
+
+===============================================================================
+                            === Debugging / Testing ===
+===============================================================================
+
+We provide a test client, named cec-client, to debug the device.
+To check whether the device can be detected, execute the following command:
+* cec-client -l
+
+"cec-client -h" shows a list of commands and options that are available.
+
+===============================================================================
+                              === Developers ===
+===============================================================================
+
+We provide a C, C++ and .NET CLR interface to the adapter.
+
+C++ developers:
+* the API can be found in /include/cec.h
+* an example implementation can be found in /src/testclient/main.cpp
+
+C developers:
+* the API can be found in /include/cecc.h
+
+.NET developers:
+* add a reference to LibCecSharp.dll
+* an example can be found in \src\CecSharpTester\CecSharpClient.cs
+
+===============================================================================
+                        === Developers Agreement ===
+===============================================================================
+
+If you wish to contribute to this project, you must first sign our contributors
+agreement. Please see http://www.pulse-eight.net/contributors for more
+information.
