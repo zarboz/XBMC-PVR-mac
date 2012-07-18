@@ -1,5 +1,5 @@
-AC_PREREQ(2.59)
-AC_INIT([darwin-depends], [2.00], [http://trac.xbmc.org])
+AC_PREREQ([2.69])
+AC_INIT([darwin-depends],[2.00],[http://trac.xbmc.org])
 
 AC_ARG_WITH([darwin],
   [AS_HELP_STRING([--with-darwin],
